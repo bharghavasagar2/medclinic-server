@@ -14,14 +14,14 @@ app.use(cors());
 app.use(morgan('dev'));
 
 // Routes
-app.use('/medclinic', require('../server/routes/patientRoutes.js'));
-app.use('/medclinic', require('../server/routes/appointmentRoutes.js'));
-app.use('/medclinic', require('../server/routes/authRoutes.js'));
-app.use('/medclinic', require('../server/routes/doctorRoutes.js'));
-app.use('/medclinic', require('../server/routes/videoRoutes.js'));
-app.use('/medclinic', require('../server/routes/prescriptionRoutes.js'));
-app.use('/medclinic', require('../server/routes/paymentsRoutes.js'));
-app.use('/medclinic', require('../server/routes/notificationRoutes'));
+app.use('/medclinic', require('./routes/patientRoutes.js'));
+app.use('/medclinic', require('./routes/appointmentRoutes.js'));
+app.use('/medclinic', require('./routes/authRoutes.js'));
+app.use('/medclinic', require('./routes/doctorRoutes.js'));
+app.use('/medclinic', require('./routes/videoRoutes.js'));
+app.use('/medclinic', require('./routes/prescriptionRoutes.js'));
+app.use('/medclinic', require('./routes/paymentsRoutes.js'));
+app.use('/medclinic', require('./routes/notificationRoutes'));
 
 
 // Serve static files in production
